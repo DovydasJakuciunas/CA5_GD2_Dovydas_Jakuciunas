@@ -1,6 +1,6 @@
 package com.dkit.gd2.dovydas.Core;
 
-public class ServiceDetails
+public class BodyBuildingServiceDetails
 {
     public static final int SERVER_PORT = 50000;
     public static final int CLIENT_PORT = 50001;

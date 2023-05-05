@@ -2,16 +2,16 @@ package com.dkit.gd2.dovydas.Core;
 
 public class Packet
 {
-    private MarketEnum command;
+    private MenuOptions command;
     private String components;
 
-    public Packet(MarketEnum command, String components)
+    public Packet(MenuOptions.ClientMenuOptions command, String components)
     {
         this.command = command;
         this.components = components;
     }
 
-    public MarketEnum getCommand()
+    public MenuOptions getCommand()
     {
         return command;
     }
@@ -19,6 +19,11 @@ public class Packet
     public String getComponents()
     {
         return components;
+    }
+
+    public MenuOptions getRequestType()
+    {
+        return command;
     }
 
     @Override
